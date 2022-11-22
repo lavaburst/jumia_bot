@@ -15,7 +15,7 @@ driver = webdriver.Chrome(PATH)
 
 driver.get("https://www.jumia.co.ke/")
 
-offers = ["Pebe", "XIAOMI"]
+offers = ["Pembe", "XIAOMI"]
 bei = ["319", "10,699"]
 
 
@@ -112,7 +112,7 @@ def get_homepage():
 def add_to_cart():
     add_cart = driver.find_element(By .XPATH, '//*[@id="add-to-cart"]/button')
     add_cart.send_keys(Keys.ENTER)
-    time.sleep(2)
+    time.sleep(4)
 
 def open_the_cart():
     open_cart = driver.find_element(By .XPATH, '//*[@id="jm"]/header/section/div[2]/a')
